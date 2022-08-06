@@ -1,0 +1,173 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Orbitron;
+}
+.container {
+  width: 100vw;
+  height: 100vh;
+  padding: 2rem 4rem;
+}
+.navbar-container {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  justify-content: space-between;
+}
+.navbar-container > div > img {
+  width: 6rem;
+  margin-bottom: 1rem;
+}
+.list {
+  display: flex;
+  list-style: none;
+  justify-content: space-between;
+  gap: 2rem;
+}
+.list li {
+  position: relative;
+}
+.list li::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 1ch;
+  width: 0;
+  height: 2px;
+  background-color: #000000;
+  transition: all 0.3s ease-in-out;
+}
+.list li:hover,
+.list li:focus {
+  font-weight: 500;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+  z-index: 2;
+}
+.list li:hover::after,
+.list li:focus::after {
+  width: 60%;
+}
+.button-group {
+  display: flex;
+  justify-content: space-evenly;
+  gap: 0.5rem;
+  align-items: center;
+}
+.search-icon svg {
+  height: 1.2rem;
+  margin-top: 0.3rem;
+  cursor: pointer;
+}
+.search-icon svg:hover {
+  height: 1.5rem;
+  transition: all 0.3s ease-in-out;
+}
+.nav-button {
+  border-radius: 0.5rem;
+  padding: 0.3rem 2rem;
+  font-family: Poppins;
+}
+.nav-button:hover {
+  color: #fff;
+  background-color: #000;
+  cursor: pointer;
+}
+.hero-container {
+  margin: 2rem 0;
+  position: relative;
+}
+.hero-container div > img {
+  position: absolute;
+  top: 0;
+  width: 25rem;
+  height: 70vh;
+  object-position: top;
+  object-fit: cover;
+}
+.square {
+  position: absolute;
+  top: 38vh;
+  left: 13rem;
+}
+.square img {
+  width: 15rem;
+}
+.globe {
+  position: absolute;
+  top: -1.5rem;
+  left: 50%;
+}
+.globe img,
+.star img {
+  width: 3rem;
+}
+.star {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+.hero-container-right {
+  position: absolute;
+  width: 60vw;
+  top: 0;
+  left: 70%;
+  transform: translate(-50%, 15%);
+  text-align: center;
+}
+.hero-heading {
+  font-size: 3rem;
+}
+.hero-description {
+  padding: 2rem 0;
+  font-size: 0.8rem;
+  width: 60%;
+  margin: auto;
+}
+.hero-description + div {
+  margin-top: 2rem;
+}
+.button-email {
+  background-color: #ffffff;
+  color: #000;
+  border-radius: 0.5rem;
+  padding: 0.3rem 1rem;
+}
+.button-email:hover,
+.button-email:focus {
+  color: #ffffff;
+  background-color: #000;
+  cursor: pointer;
+}
+.button-join {
+  background-color: #000;
+  color: #fff;
+  border-radius: 0.5rem;
+  padding: 0.3rem 1rem;
+}
+.button-join:hover,
+.button-join:focus {
+  background-color: #fff;
+  color: #000;
+  cursor: pointer;
+}
+.icons::before {
+  content: url("assets/start.png");
+  position: absolute;
+  bottom: 10%;
+  left: 5%;
+  transform: translateY(40%) scale(0.6);
+}
+.contact-heading {
+  margin-top: 4rem;
+  text-transform: capitalize;
+  padding: 1rem;
+}
+.icons span {
+  padding: 0.5rem;
+}
+.icons img {
+  width: 2rem;
+}
