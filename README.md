@@ -6,4 +6,4 @@
 
 ![Street Style Landing Page](./thumbnail.png)
 
-### [Click here]() to see the deployed website.
+### [Click here](https://street-style-landing-page-melonlobo.vercel.app) to see the deployed website.
